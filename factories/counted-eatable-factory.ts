@@ -8,8 +8,8 @@ export class CountedEatableFactory extends AbstractEatableFactory {
     createNYPizza(): Eatable {
         return new EatableCounter(new NewYorkPizza());
     }
+
     createItalianPizza(): Eatable {
         return new EatableCounter(new ItalianPizza());
     }
-
 }
