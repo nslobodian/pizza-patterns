@@ -1,4 +1,4 @@
-import { Juice } from './juice'
+import { Juice } from './interfaces/juice'
 
 export class TomatoJuice implements Juice {
     drink() {
