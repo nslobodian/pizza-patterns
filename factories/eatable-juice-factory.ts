@@ -1,5 +1,5 @@
 import { JuiceAdapter } from "../juice-adapter";
-import { TomatoJuice } from "../tomato-juice";
+import { TomatoJuice } from "../domain/tomato-juice";
 import { AbstractJuiceEatableFactory } from "./abstract-juice-factory";
 
 export class EatableJuiceFactory extends AbstractJuiceEatableFactory {

@@ -2,18 +2,17 @@ import { AbstractEatableFactory } from "./factories/abstract-eatable-factory";
 import { AbstractJuiceEatableFactory } from "./factories/abstract-juice-factory";
 import { Eatable } from "./interfaces/eatable";
 import { EatableCounter } from "./eatable-counter";
-import { JuiceAdapter } from "./juice-adapter";
-import { TomatoJuice } from "./tomato-juice";
+import { Plate } from "./plate";
 
 export class RestaurantSimulator {
     run(eatableFactory: AbstractEatableFactory, juiceFactory: AbstractJuiceEatableFactory) {
-        const newYorkPizza = eatableFactory.createNYPizza()
-        const italianPizza = eatableFactory.createItalianPizza()
+        const plate = new Plate()
+        plate.add(eatableFactory.createNYPizza())
+        plate.add(eatableFactory.createItalianPizza())
 
         const tomatoJuice = juiceFactory.createTomatoJuice()
 
-        this.simulate(newYorkPizza)
-        this.simulate(italianPizza)
+        this.simulate(plate)
 
         this.simulate(tomatoJuice)
 

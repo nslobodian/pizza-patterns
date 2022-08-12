@@ -1,4 +1,4 @@
-import { Eatable } from "./interfaces/eatable";
+import { Eatable } from "../interfaces/eatable";
 
 export class NewYorkPizza implements Eatable{
     eat(): void {
