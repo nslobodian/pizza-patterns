@@ -1,4 +1,4 @@
-import { Eatable } from "./eatable";
+import { Eatable } from "./interfaces/eatable";
 
 export class EatableCounter implements Eatable {
 

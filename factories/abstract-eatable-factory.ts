@@ -1,4 +1,4 @@
-import { Eatable } from "./eatable";
+import { Eatable } from "../interfaces/eatable";
 
 export abstract class AbstractEatableFactory {
     abstract createNYPizza(): Eatable

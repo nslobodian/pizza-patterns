@@ -1,5 +1,5 @@
 import { AbstractEatableFactory } from "./abstract-eatable-factory";
-import { Eatable } from "./eatable";
+import { Eatable } from "./interfaces/eatable";
 import { EatableCounter } from "./eatable-counter";
 import { ItalianPizza } from "./italian-pizza";
 import { NewYorkPizza } from "./new-york-pizza";
