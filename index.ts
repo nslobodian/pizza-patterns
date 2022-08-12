@@ -1,8 +1,3 @@
-import { ItalianPizza } from "./italian-pizza";
-import { NewYorkPizza } from "./new-york-pizza";
+import { RestaurantSimulator } from "./simulator";
 
-const newYorkPizza = new NewYorkPizza()
-const italianPizza = new ItalianPizza()
-
-newYorkPizza.eat()
-italianPizza.eat()
+new RestaurantSimulator().run()
